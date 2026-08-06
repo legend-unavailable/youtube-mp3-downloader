@@ -8,7 +8,7 @@ const { log, error } = require('console');
 const isDev = !app.isPackaged;
 const platform = process.platform;
 
-const baseBinPath = isDev ? path.join(__dirname, '../bin', platform) : path.join(process.resourcesPath, 'bin', platform);
+const baseBinPath = isDev ? path.join(__dirname, '../bin', platform) : path.join(process.resourcesPath, platform);
 
 const exeExtension = platform === 'win32' ? '.exe' : '';
 
